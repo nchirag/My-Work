@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grouping.css">
+    <title>Team Generator</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="title">Team Generator</h1>
+        <div class="sidebar">
+            <label for="upload-file">Upload Excel File:</label>
+            <input type="file" id="upload-file" accept=".xlsx, .xls">
+            
+            <label for="team-size">Select Team Size:</label>
+            <select id="team-size">
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <button id="group-button">Group Students</button>
+            <button id="download-button">Download Grouped Teams as Excel</button>
+        </div>
+
+        <div class="content">
+            <div id="grouped-teams"></div>
+            <div id="original-list"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="grouping.js"></script>
+</body>
+</html>
